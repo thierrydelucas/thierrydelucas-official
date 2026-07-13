@@ -1,4 +1,3 @@
-````markdown
 # Thierry de Lucas
 
 Official website for violinist Thierry de Lucas.
