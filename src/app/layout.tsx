@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from "../shared/presentation/components/Footer";
+import { Inter, Cormorant_Garamond } from "next/font/google";
 
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cormorant",
+  display: "swap",
+});
 export const metadata: Metadata = {
   title: "Thierry de Lucas | Violinist",
   description:
@@ -63,9 +77,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="w-full h-full flex items-center justify-center bg-gray-50">
-        {children}
+    <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
+      <body className="w-full h-full ">
+        <div className="flex min-h-screen w-full flex-col">
+          <main className="flex-1">{children}</main>
+          <footer className="">
+            <Footer />
+          </footer>
+        </div>
       </body>
     </html>
   );
