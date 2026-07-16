@@ -106,9 +106,11 @@ export default async function LocaleLayout({ children, params }: Props) {
     >
       <body className="w-full h-full">
         <NextIntlClientProvider messages={messages}>
-          <div className="flex min-h-screen w-full flex-col bg-[#0B0B0B]">
+          <div className="flex min-h-dvh w-full flex-col bg-[#0B0B0B]">
             <Header />
-            <main className={`flex-1 pt-[60px] px-6 md:px-8 flex justify-center`}>
+            <main
+              className={`flex-1 pt-[60px] px-6 md:px-8 flex justify-center`}
+            >
               <div className={`w-full ${WIDTH_DIMENSION}`}>{children}</div>
             </main>
             <footer>
