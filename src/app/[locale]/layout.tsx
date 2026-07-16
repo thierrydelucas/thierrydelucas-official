@@ -1,11 +1,14 @@
 import "../globals.css";
+import Footer from "@/src/shared/presentation/components/Footer";
+import Header from "@/src/shared/presentation/components/Header";
+
 import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { Inter, Cormorant_Garamond } from "next/font/google";
-import Footer from "@/src/shared/presentation/components/Footer";
+import { Inter, Cormorant_Garamond, Playfair } from "next/font/google";
 import { routing } from "@/src/shared/infrastructure/i18n/routing";
+import WIDTH_DIMENSION from "@/src/shared/presentation/utils/widthDimension";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,6 +19,13 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-cormorant",
+  display: "swap",
+});
+
+const playfair = Playfair({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-playfair",
   display: "swap",
 });
 
@@ -90,11 +100,17 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${cormorant.variable}`}>
+    <html
+      lang={locale}
+      className={`${inter.variable} ${cormorant.variable} ${playfair.variable}`}
+    >
       <body className="w-full h-full">
         <NextIntlClientProvider messages={messages}>
-          <div className="flex min-h-screen w-full flex-col">
-            <main className="flex-1">{children}</main>
+          <div className="flex min-h-screen w-full flex-col bg-[#0B0B0B]">
+            <Header />
+            <main className={`flex-1 pt-[60px] px-6 md:px-8 flex justify-center`}>
+              <div className={`w-full ${WIDTH_DIMENSION}`}>{children}</div>
+            </main>
             <footer>
               <Footer />
             </footer>

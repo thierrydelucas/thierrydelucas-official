@@ -1,3 +1,11 @@
 {
-  "home": { "title": "Welcome" }
+  "home": { "title": "Welcome" },
+  "nav": {
+    "home": "Home",
+    "biography": "Biography",
+    "schedule": "Schedule",
+    "discography": "Discography",
+    "media": "Media",
+    "contact": "Contact"
+  }
 }
