@@ -8,14 +8,14 @@ export default function HomeLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className={`flex flex-col w-full md:pt-[60px] items-center`}>
-      <section className="relative w-full h-[68dvh] sm:h-[88dvh] md:hidden">
+    <div className={`flex flex-col w-full md:pt-15 items-center`}>
+      <section className="relative w-dvw h-[68dvh] sm:h-[88dvh] md:hidden">
         <Image
           src={BackgroundImage}
           alt="thierry's image"
           fill
           priority
-          className="object-cover object-center sm:object-center  brightness-85"
+          className="object-cover object-center sm:object-center brightness-85"
           sizes="100vw"
         />
       </section>
