@@ -1,5 +1,8 @@
 {
-  "home": { "title": "Bem vindo" },
+  "home": {
+    "title": "Bem vindo",
+    "subtitle": "Violinista internacional"
+  },
   "nav": {
     "home": "Home",
     "biography": "Biografia",

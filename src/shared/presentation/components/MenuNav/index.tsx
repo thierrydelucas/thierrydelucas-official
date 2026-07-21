@@ -71,7 +71,7 @@ export default function MenuNav({ onButtonClick }: Props) {
               router.push(href);
             }, DRAWER_ANIMATION_DURATION_MS);
           }}
-          className={`text-white font-playfair text-xl md:text-[18px] lg:text-2xl text-center ${path.toUpperCase() !== originalName.toUpperCase() && "opacity-50"} md:hover:opacity-100 transition-all duration-300 ease-in-out`}
+          className={`text-white font-playfair text-xl md:text-[18px] lg:text-xl text-center ${path.toUpperCase() !== originalName.toUpperCase() && "opacity-50"} md:hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer`}
         >
           {name}
         </Link>

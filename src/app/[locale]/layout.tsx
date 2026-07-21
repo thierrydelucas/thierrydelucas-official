@@ -8,7 +8,6 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Inter, Cormorant_Garamond, Playfair } from "next/font/google";
 import { routing } from "@/src/shared/infrastructure/i18n/routing";
-import WIDTH_DIMENSION from "@/src/shared/presentation/utils/widthDimension";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -108,10 +107,8 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider messages={messages}>
           <div className="flex min-h-dvh w-full flex-col bg-[#0B0B0B]">
             <Header />
-            <main
-              className={`flex-1 pt-[60px] px-6 md:px-8 flex justify-center`}
-            >
-              <div className={`w-full ${WIDTH_DIMENSION}`}>{children}</div>
+            <main className={`w-full`}>
+              <div>{children}</div>
             </main>
             <footer>
               <Footer />

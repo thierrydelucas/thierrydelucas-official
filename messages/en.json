@@ -1,5 +1,8 @@
 {
-  "home": { "title": "Welcome" },
+  "home": {
+    "title": "Welcome",
+    "subtitle": "International violinist"
+  },
   "nav": {
     "home": "Home",
     "biography": "Biography",

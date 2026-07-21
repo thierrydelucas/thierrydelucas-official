@@ -1,0 +1,48 @@
+import Button from "@/src/shared/presentation/components/Button";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import BackgroundImage from "@/public/images/image_5.jpeg";
+import SocialMediaContainer from "@/src/shared/presentation/components/SocialMediaContainer";
+import EmailAddressComponent from "@/src/shared/presentation/components/EmailAddressComponent";
+
+interface HeroProps {
+  locale: string;
+}
+
+export default function Hero({ locale }: HeroProps) {
+  const message = useTranslations();
+  return (
+    <section className="md:flex md:items-center md:justify-between md:w-full">
+      <section className="hidden md:block mr-10">
+        <Image
+          src={BackgroundImage}
+          alt="thierry's image"
+          width={540}
+          height={600}
+          className="rounded-3xl brightness-85"
+          sizes="100vw"
+        />
+      </section>
+      <div className="flex flex-col items-center text-center ">
+        <div className="flex flex-col gap-2">
+          <h1 className="font-cormorant text-4xl xl:text-5xl text-neutral-100 font-normal leading-tight tracking-wide md:text-5xl">
+            Thierry de Lucas
+          </h1>
+          <p className="font-cormorant text-[16px] italic text-gray-400 md:text-lg">
+            {message("home.subtitle")}
+          </p>
+        </div>
+
+        <Link href={`/${locale}/biography`} className="mt-10">
+          <Button title={message("nav.biography")} />
+        </Link>
+
+        <section className="hidden md:flex flex-col gap-6 mt-14 items-center">
+          <SocialMediaContainer />
+          <EmailAddressComponent />
+        </section>
+      </div>
+    </section>
+  );
+}

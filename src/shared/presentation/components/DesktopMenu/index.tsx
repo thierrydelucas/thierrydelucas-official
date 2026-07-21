@@ -18,7 +18,7 @@ export default function DesktopMenu() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 16 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="absolute right-full top-1/2 -translate-y-1/2 flex items-center md:gap-14 lg:gap-14 md:pr-6 lg:pr-8"
+            className="absolute right-full top-1/2 -translate-y-1/2 flex items-center md:gap-14 lg:gap-14 md:pr-6 lg:pr-18"
           >
             <nav className="flex items-center gap-2">
               <MenuNav />
