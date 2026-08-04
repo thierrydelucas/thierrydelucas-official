@@ -17,7 +17,7 @@ export default function Footer(): React.JSX.Element {
   return (
     <section
       data-cy="footer"
-      className="flex flex-col gap-4 w-full py-6 px-8 items-center justify-center border-t border-gray-50/15"
+      className="flex flex-col gap-4 w-full py-6 px-8 items-center justify-center border-t border-gray-500/10"
     >
       <SocialMediaContainer />
 
