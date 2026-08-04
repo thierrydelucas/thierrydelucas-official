@@ -10,5 +10,39 @@
     "discography": "Discography",
     "media": "Media",
     "contact": "Contact"
+  },
+  "biography": {
+    "sections": {
+      "01": {
+        "title": "The Journey",
+        "p1": "Thierry de Lucas Neves is a Brazilian violinist, educator, and recording artist whose career has taken him to major concert halls and festivals throughout the United States, Brazil, and Europe. He currently serves as Associate Concertmaster of the Savannah Philharmonic and is a distinguished member of the Sphinx Virtuosi, one of the leading chamber orchestras in the United States.",
+        "p2": "A graduate of the Manhattan School of Music, Thierry studied under Pinchas Zukerman and Patinka Kopec as a member of the highly selective Zukerman Program. During his tenure with the New Jersey Symphony, he was a recipient of the prestigious Colton Fellowship, performing alongside internationally acclaimed conductors and soloists while further developing his artistic voice as an orchestral and chamber musician."
+      },
+      "02": {
+        "title": "On the International Stage",
+        "p1": "With Sphinx Virtuosi, Thierry has performed in more than twenty U.S. states, appearing at renowned venues and institutions including Carnegie Hall, Stanford University, the Philadelphia Chamber Music Society, and the New World Symphony. He has also recorded two albums with the ensemble for Deutsche Grammophon.",
+        "p2": "In 2025, Thierry recorded his debut album, Romances Brasileiros, with pianist Coco Leung for the SÉCULO30 label. Scheduled for release in 2026, the recording brings renewed attention to overlooked Brazilian composers and features several works receiving their first commercial recordings."
+      },
+      "03": {
+        "title": "A Distinctive Voice",
+        "p1": "A prizewinner in numerous competitions, Thierry earned national recognition in Brazil through distinctions such as the Paulo Bosísio National Competition, Young Soloist of the Goiás Philharmonic, and UFRJ Young Soloists.",
+        "p2": "In the United States, he was a semifinalist in two editions of the Sphinx Competition, received the Achievement Award during its 25th edition, and won the Lillian Fuchs Chamber Music Festival in 2023.In the United States, he was a semifinalist in two editions of the Sphinx Competition, received the Achievement Award during its 25th edition, and won the Lillian Fuchs Chamber Music Festival in 2023."
+      },
+      "04": {
+        "title": "As a Soloist",
+        "p1": "As a soloist, he has appeared with orchestras throughout Brazil, including the Goiás Philharmonic, UFRJ Symphony Orchestra, Goyazes Chamber Orchestra, and Goiás Youth Orchestra. His performances have been featured at major festivals such as BeethovenFest in Germany and the Campos do Jordão International Winter Festival.",
+        "p2": "He previously served as Concertmaster of the Goiânia Symphony Orchestra and Assistant Concertmaster of the Goiás Philharmonic, while also collaborating with leading Brazilian ensembles including the Brazilian Symphony Orchestra, Petrobras Symphony Orchestra, and Mato Grosso State Orchestra."
+      },
+      "05": {
+        "title": "Beyond the Concert Stage",
+        "p1": "In 2014, his performance at Juilliard ChamberFest received praise from The New York Times. Beyond the concert stage, Thierry is deeply committed to education and mentorship, serving on the faculty of the Sphinx Performance Academy at institutions including The Juilliard School, the Cleveland Institute of Music, and the Boston Conservatory at Berklee.",
+        "p2": ""
+      },
+      "06": {
+        "title": "De Lucas Project",
+        "p1": "Originally from Goiânia, Brazil, Thierry is the founder of Projeto De Lucas, an initiative dedicated to mentoring and providing online instruction to talented young violinists from underserved and remote regions of Brazil.",
+        "p2": ""
+      }
+    }
   }
 }

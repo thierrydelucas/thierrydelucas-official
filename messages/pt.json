@@ -10,5 +10,39 @@
     "discography": "Discografia",
     "media": "Media",
     "contact": "Contato"
+  },
+  "biography": {
+    "sections": {
+      "01": {
+        "title": "A Jornada",
+        "p1": "Thierry de Lucas Neves é um violinista, educador e artista de gravação brasileiro cuja carreira o levou a importantes salas de concerto e festivais nos Estados Unidos, no Brasil e na Europa. Atualmente, atua como Spalla Associado da Savannah Philharmonic e é membro distinto dos Sphinx Virtuosi, uma das principais orquestras de câmara dos Estados Unidos.",
+        "p2": "Formado na Manhattan School of Music, Thierry estudou com Pinchas Zukerman e Patinka Kopec como membro do altamente seletivo Zukerman Program. Durante sua passagem pela New Jersey Symphony, foi contemplado com a prestigiada Colton Fellowship, apresentando-se ao lado de maestros e solistas aclamados internacionalmente e aprofundando sua voz artística como músico orquestral e de câmara."
+      },
+      "02": {
+        "title": "No Palco Internacional",
+        "p1": "Com os Sphinx Virtuosi, Thierry apresentou-se em mais de vinte estados dos EUA, em locais e instituições renomados, incluindo Carnegie Hall, Stanford University, Philadelphia Chamber Music Society e New World Symphony. Também gravou dois álbuns com o ensemble para a Deutsche Grammophon.",
+        "p2": "Em 2025, Thierry gravou seu álbum de estreia, Romances Brasileiros, com a pianista Coco Leung para o selo SÉCULO30. Com lançamento previsto para 2026, a gravação traz renovada atenção a compositores brasileiros pouco conhecidos e inclui várias obras em sua primeira gravação comercial."
+      },
+      "03": {
+        "title": "Uma Voz Distinta",
+        "p1": "Premiado em inúmeras competições, Thierry conquistou reconhecimento nacional no Brasil por distinções como o Concurso Nacional Paulo Bosísio, Jovem Solista da Filarmônica de Goiás e Jovens Solistas da UFRJ.",
+        "p2": "Nos Estados Unidos, foi semifinalista em duas edições do Sphinx Competition, recebeu o Achievement Award em sua 25ª edição e venceu o Lillian Fuchs Chamber Music Festival em 2023."
+      },
+      "04": {
+        "title": "Como Solista",
+        "p1": "Como solista, apresentou-se com orquestras em todo o Brasil, incluindo a Filarmônica de Goiás, a Orquestra Sinfônica da UFRJ, a Orquestra de Câmara Goyazes e a Orquestra Jovem de Goiás. Suas performances foram destaque em grandes festivais, como o BeethovenFest na Alemanha e o Festival Internacional de Inverno de Campos do Jordão.",
+        "p2": "Anteriormente, atuou como Spalla da Orquestra Sinfônica de Goiânia e Spalla Assistente da Filarmônica de Goiás, além de colaborar com importantes ensembles brasileiros, incluindo a Orquestra Sinfônica Brasileira, a Orquestra Sinfônica Petrobras e a Orquestra do Estado de Mato Grosso."
+      },
+      "05": {
+        "title": "Além do Palco de Concertos",
+        "p1": "Em 2014, sua performance no Juilliard ChamberFest recebeu elogios do The New York Times. Além do palco de concertos, Thierry dedica-se profundamente à educação e à mentoria, integrando o corpo docente da Sphinx Performance Academy em instituições como The Juilliard School, o Cleveland Institute of Music e o Boston Conservatory at Berklee.",
+        "p2": ""
+      },
+      "06": {
+        "title": "Projeto De Lucas",
+        "p1": "Natural de Goiânia, Brasil, Thierry é o fundador do Projeto De Lucas, uma iniciativa dedicada à mentoria e ao ensino online de jovens violinistas talentosos de regiões carentes e remotas do Brasil.",
+        "p2": ""
+      }
+    }
   }
 }

@@ -1,6 +1,5 @@
-import { getTranslations } from "next-intl/server";
+import BiographyContent from "@/src/modules/biography/presentation/components/BiographyContent";
 
 export default async function Biography() {
-  const message = getTranslations();
-  return <div className="pt-4 text-white flex flex-col  w-full ">TESTE BIO</div>;
+  return <BiographyContent />;
 }
