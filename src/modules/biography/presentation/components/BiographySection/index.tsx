@@ -43,7 +43,7 @@ export default function BiographySection({
         >
           {number}
         </span>
-        <h4 className="font-cormorant -mt-18 text-[34px] md:text-[64px] font-light uppercase text-zinc-100 [-webkit-text-stroke:0.6px_#0B0B0B] md:-mt-28 tracking-tight">
+        <h4 className="font-cormorant -mt-18 text-[34px] md:text-[64px] font-light uppercase text-zinc-100 md:[-webkit-text-stroke:0.6px_#0B0B0B] md:-mt-28 tracking-tight">
           {title}
         </h4>
       </div>
@@ -58,8 +58,8 @@ export default function BiographySection({
         <div
           className={cn(
             "relative w-full shrink-0 md:w-[42%] after:pointer-events-none after:absolute after:inset-0 after:shadow-[inset_0_0_0_1px_#1E1E1E]",
-            isTextFirst && "order-2 md:order-none",
-            isImageBetween && "order-2 md:order-none",
+            isTextFirst && "order-2 md:order-0",
+            isImageBetween && "order-2 md:order-0",
           )}
         >
           <Image
@@ -84,7 +84,8 @@ export default function BiographySection({
               key={`${number}-p-${index}`}
               className={cn(
                 "font-inter text-base text-neutral-300 md:text-lg leading-[180%] md:leading-[190%]",
-                isImageBetween && (index === 0 ? "order-1 md:order-0" : "order-3 md:order-0"),
+                isImageBetween &&
+                  (index === 0 ? "order-1 md:order-0" : "order-3 md:order-0"),
               )}
             >
               {paragraph}
