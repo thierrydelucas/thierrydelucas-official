@@ -1,6 +1,7 @@
 import "../globals.css";
 import Footer from "@/src/shared/presentation/components/Footer";
 import Header from "@/src/shared/presentation/components/Header";
+import Toaster from "@/src/shared/presentation/components/Toaster";
 
 import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
@@ -114,6 +115,7 @@ export default async function LocaleLayout({ children, params }: Props) {
               <Footer />
             </footer>
           </div>
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

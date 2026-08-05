@@ -398,6 +398,90 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hookform/resolvers@npm:^5.7.1":
+  version: 5.7.1
+  resolution: "@hookform/resolvers@npm:5.7.1"
+  dependencies:
+    "@standard-schema/utils": "npm:^0.3.0"
+  peerDependencies:
+    "@sinclair/typebox": ">=0.25.24"
+    "@standard-schema/spec": ^1.0.0
+    "@typeschema/main": ">=0.13.7"
+    "@vinejs/vine": ^2.0.0 || ^3.0.0 || ^4.0.0
+    ajv: ^8.12.0
+    ajv-errors: ^3.0.0
+    ajv-formats: ^2.1.1
+    arktype: ^2.0.0
+    ata-validator: ^1.2.0
+    class-transformer: ">=0.4.0"
+    class-validator: ">=0.12.0"
+    computed-types: ^1.0.0
+    effect: ^3.10.3
+    fluentvalidation-ts: ^3.0.0
+    fp-ts: ^2.7.0
+    io-ts: ^2.0.0
+    joi: ^17.0.0
+    nope-validator: ">=0.12.0"
+    react-hook-form: ^7.55.0
+    superstruct: ">=0.12.0"
+    typanion: ^3.3.2
+    valibot: ">=0.31.0 || ^1.0.0-beta.4 || ^1.0.0-rc"
+    vest: ">=3.0.0"
+    yup: ^1.0.0
+    zod: ^3.25.0 || ^4.0.0
+  peerDependenciesMeta:
+    "@sinclair/typebox":
+      optional: true
+    "@standard-schema/spec":
+      optional: true
+    "@typeschema/main":
+      optional: true
+    "@vinejs/vine":
+      optional: true
+    ajv:
+      optional: true
+    ajv-errors:
+      optional: true
+    ajv-formats:
+      optional: true
+    arktype:
+      optional: true
+    ata-validator:
+      optional: true
+    class-transformer:
+      optional: true
+    class-validator:
+      optional: true
+    computed-types:
+      optional: true
+    effect:
+      optional: true
+    fluentvalidation-ts:
+      optional: true
+    fp-ts:
+      optional: true
+    io-ts:
+      optional: true
+    joi:
+      optional: true
+    nope-validator:
+      optional: true
+    superstruct:
+      optional: true
+    typanion:
+      optional: true
+    valibot:
+      optional: true
+    vest:
+      optional: true
+    yup:
+      optional: true
+    zod:
+      optional: true
+  checksum: 10c0/a1e9608ca62488ad80883e421e2cf973e87668864993f490af6ea286c270530f04584a4f1b88159eee2a8207a52c92efeca363ddd6ea86b029d902a135101cdb
+  languageName: node
+  linkType: hard
+
 "@humanfs/core@npm:^0.19.2":
   version: 0.19.2
   resolution: "@humanfs/core@npm:0.19.2"
@@ -1259,6 +1343,20 @@ __metadata:
   version: 1.21.5
   resolution: "@schummar/icu-type-parser@npm:1.21.5"
   checksum: 10c0/8c2bdb2087b2aeaafb484afefcc5291b21a7179fb92429cabc5f6b46019c6dedbeac6025b1a8f08e8749fb963f8a011e0ccba340ca3761f3c2348aac4b667c2c
+  languageName: node
+  linkType: hard
+
+"@stablelib/base64@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "@stablelib/base64@npm:1.0.1"
+  checksum: 10c0/6330720f021819d19cecfe274111b79a256caa81df478d6b0ae7effc8842b96915b6aeed85926ff05b4d48ec1fc78ad043d928b730ee4e6cc6e8cba6aa097bed
+  languageName: node
+  linkType: hard
+
+"@standard-schema/utils@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@standard-schema/utils@npm:0.3.0"
+  checksum: 10c0/6eb74cd13e52d5fc74054df51e37d947ef53f3ab9e02c085665dcca3c38c60ece8d735cebbdf18fbb13c775fbcb9becb3f53109b0e092a63f0f7389ce0993fd0
   languageName: node
   linkType: hard
 
@@ -3402,6 +3500,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-sha256@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "fast-sha256@npm:1.3.0"
+  checksum: 10c0/87f9e4baa7639576cf60a2b6235c9f436e1a1c52323abbd8a705b5bea8355500acf176f2aed0c14f2ecd6d6007e26151461bab2f27b8953bcca8d9d6b76a86e4
+  languageName: node
+  linkType: hard
+
 "fastq@npm:^1.6.0":
   version: 1.20.1
   resolution: "fastq@npm:1.20.1"
@@ -5189,6 +5294,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postal-mime@npm:2.7.5":
+  version: 2.7.5
+  resolution: "postal-mime@npm:2.7.5"
+  checksum: 10c0/cb258498d67529fed3fa69af98eabf6c53cbc4dd060db0a550af9952e65ffe93046a384765e2ee0269d090564ef2c66a00aec02418036bbf6aa14390d0af1955
+  languageName: node
+  linkType: hard
+
 "postcss@npm:8.4.31":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
@@ -5302,6 +5414,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-hook-form@npm:^7.84.0":
+  version: 7.84.0
+  resolution: "react-hook-form@npm:7.84.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17 || ^18 || ^19
+  checksum: 10c0/9af7e9850ac3c41e6a03fe2fc5a236525603dd8ab983194ffb8e893dba1d26b518ae02989192786d8c1f109793adb93d6de46385bee2b04ff06267f7431bdf8e
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -5403,6 +5524,21 @@ __metadata:
   dependencies:
     throttleit: "npm:^1.0.0"
   checksum: 10c0/d5dcb7155a738572c8781436f6b418e866066a30eea0f99a9ab26b6f0ed6c13637462bba736357de3899b8d30431ee9202ac956a5f8ccdd0d9d1ed0962000d14
+  languageName: node
+  linkType: hard
+
+"resend@npm:^6.18.1":
+  version: 6.18.1
+  resolution: "resend@npm:6.18.1"
+  dependencies:
+    postal-mime: "npm:2.7.5"
+    standardwebhooks: "npm:1.0.0"
+  peerDependencies:
+    "@react-email/render": "*"
+  peerDependenciesMeta:
+    "@react-email/render":
+      optional: true
+  checksum: 10c0/6450a9166c12ad5db56fc6f77d01125b8e622ec93fe86ccb9295a498a134c4a446663f23fcacf713bd95b8aa0407fb9d015b8c51aa7d17a2deebbd308e28353d
   languageName: node
   linkType: hard
 
@@ -5777,6 +5913,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sonner@npm:^2.0.7":
+  version: 2.0.7
+  resolution: "sonner@npm:2.0.7"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+    react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+  checksum: 10c0/6966ab5e892ed6aab579a175e4a24f3b48747f0fc21cb68c3e33cb41caa7a0eebeb098c210545395e47a18d585eb8734ae7dd12d2bd18c8a3294a1ee73f997d9
+  languageName: node
+  linkType: hard
+
 "source-map-js@npm:^1.0.2, source-map-js@npm:^1.2.1":
   version: 1.2.1
   resolution: "source-map-js@npm:1.2.1"
@@ -5809,6 +5955,16 @@ __metadata:
   version: 0.0.5
   resolution: "stable-hash@npm:0.0.5"
   checksum: 10c0/ca670cb6d172f1c834950e4ec661e2055885df32fee3ebf3647c5df94993b7c2666a5dbc1c9a62ee11fc5c24928579ec5e81bb5ad31971d355d5a341aab493b3
+  languageName: node
+  linkType: hard
+
+"standardwebhooks@npm:1.0.0":
+  version: 1.0.0
+  resolution: "standardwebhooks@npm:1.0.0"
+  dependencies:
+    "@stablelib/base64": "npm:^1.0.0"
+    fast-sha256: "npm:^1.3.0"
+  checksum: 10c0/aee097d0f3c05172c19b80df1ed9596a2ce92f8956957650d0bbe47c2ca6d36515796b51d523333cb4a48c889b2ab130d789e7879e14975c4381bc7a61274327
   languageName: node
   linkType: hard
 
@@ -6063,6 +6219,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "thierrydelucas-official@workspace:."
   dependencies:
+    "@hookform/resolvers": "npm:^5.7.1"
     "@tailwindcss/postcss": "npm:^4"
     "@types/node": "npm:^20"
     "@types/react": "npm:^19"
@@ -6076,10 +6233,14 @@ __metadata:
     next-intl: "npm:^4.13.2"
     react: "npm:19.2.4"
     react-dom: "npm:19.2.4"
+    react-hook-form: "npm:^7.84.0"
+    resend: "npm:^6.18.1"
+    sonner: "npm:^2.0.7"
     tailwind-merge: "npm:^3.6.0"
     tailwindcss: "npm:^4"
     typescript: "npm:^5"
     vaul: "npm:^1.1.2"
+    zod: "npm:^4.4.3"
   languageName: unknown
   linkType: soft
 
@@ -6661,7 +6822,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.25.0 || ^4.0.0":
+"zod@npm:^3.25.0 || ^4.0.0, zod@npm:^4.4.3":
   version: 4.4.3
   resolution: "zod@npm:4.4.3"
   checksum: 10c0/7ea31b558e88f9faf44f31dd185e2e1cbf51fed3081787fb96cc2534749b50c0acfc6da7f0922a7353ed092dd358c7d50c28ea96c94d04af64191bd33152eca3

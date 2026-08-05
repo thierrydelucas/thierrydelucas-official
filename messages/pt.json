@@ -26,7 +26,7 @@
       "03": {
         "title": "Uma Voz Distinta",
         "p1": "Premiado em inúmeras competições, Thierry conquistou reconhecimento nacional no Brasil por distinções como o Concurso Nacional Paulo Bosísio, Jovem Solista da Filarmônica de Goiás e Jovens Solistas da UFRJ.",
-        "p2": "Nos Estados Unidos, foi semifinalista em duas edições do Sphinx Competition, recebeu o Achievement Award em sua 25ª edição e venceu o Lillian Fuchs Chamber Music Festival em 2023."
+        "p2": "Nos Estados Unidos, foi semifinalista em duas edições do Sphinx Competition, recebeu o Achievement Award em sua 25ª edição e venceu o Lillian Fuchs Chamber Music Competition em 2023."
       },
       "04": {
         "title": "Como Solista",
@@ -43,6 +43,30 @@
         "p1": "Natural de Goiânia, Brasil, Thierry é o fundador do Projeto De Lucas, uma iniciativa dedicada à mentoria e ao ensino online de jovens violinistas talentosos de regiões carentes e remotas do Brasil.",
         "p2": ""
       }
+    }
+  },
+  "contact": {
+    "title": "Entre em contato",
+    "subtitle": "Interessado em concertos, masterclasses ou colaborações.",
+    "fields": {
+      "name": "Nome",
+      "email": "E-mail",
+      "message": "Mensagem"
+    },
+    "submit": "Enviar mensagem",
+    "toast": {
+      "success": {
+        "title": "Mensagem enviada",
+        "description": "Obrigado pelo contato. Thierry retornará em breve."
+      },
+      "error": {
+        "title": "Algo deu errado",
+        "description": "Não foi possível enviar sua mensagem. Tente novamente em instantes."
+      }
+    },
+    "errors": {
+      "required": "Este campo é obrigatório",
+      "email": "Informe um e-mail válido"
     }
   }
 }
