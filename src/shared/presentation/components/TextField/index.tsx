@@ -15,6 +15,7 @@ type TextFieldProps = {
   multiline?: boolean;
   disabled?: boolean;
   type?: "text" | "email";
+  maxLength?: number;
   className?: string;
 };
 
@@ -28,6 +29,7 @@ export default function TextField({
   multiline = false,
   disabled = false,
   type = "text",
+  maxLength,
   className,
 }: TextFieldProps) {
   const id = useId();
@@ -75,7 +77,7 @@ export default function TextField({
             aria-invalid={Boolean(error)}
             aria-describedby={error ? `${id}-error` : undefined}
             className={controlClassName}
-            maxLength={1000}
+            maxLength={maxLength}
           />
         ) : (
           <input
@@ -91,6 +93,7 @@ export default function TextField({
             aria-invalid={Boolean(error)}
             aria-describedby={error ? `${id}-error` : undefined}
             className={controlClassName}
+            maxLength={maxLength}
           />
         )}
 

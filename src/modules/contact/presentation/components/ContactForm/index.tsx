@@ -7,6 +7,7 @@ import { toast } from "sonner";
 import Button from "@/src/shared/presentation/components/Button";
 import TextField from "@/src/shared/presentation/components/TextField";
 import {
+  CONTACT_FIELD_LIMITS,
   createContactFormSchema,
   type ContactFormValues,
 } from "@/src/modules/contact/presentation/schemas/contactFormSchema";
@@ -22,6 +23,7 @@ type ContactFormProps = {
   errorMessages: {
     required: string;
     email: string;
+    maxLength: string;
   };
   toastMessages: {
     success: {
@@ -105,6 +107,7 @@ export default function ContactForm({
               onBlur={field.onBlur}
               error={fieldState.error?.message}
               disabled={isSubmitting}
+              maxLength={CONTACT_FIELD_LIMITS.name}
             />
           )}
         />
@@ -122,6 +125,7 @@ export default function ContactForm({
               onBlur={field.onBlur}
               error={fieldState.error?.message}
               disabled={isSubmitting}
+              maxLength={CONTACT_FIELD_LIMITS.email}
             />
           )}
         />
@@ -139,6 +143,7 @@ export default function ContactForm({
               error={fieldState.error?.message}
               disabled={isSubmitting}
               multiline
+              maxLength={CONTACT_FIELD_LIMITS.message}
               className="md:col-span-2"
             />
           )}

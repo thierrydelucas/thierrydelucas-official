@@ -25,6 +25,7 @@ export default async function ContactContent() {
         errorMessages={{
           required: t("errors.required"),
           email: t("errors.email"),
+          maxLength: t("errors.maxLength"),
         }}
         toastMessages={{
           success: {
