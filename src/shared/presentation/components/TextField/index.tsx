@@ -75,6 +75,7 @@ export default function TextField({
             aria-invalid={Boolean(error)}
             aria-describedby={error ? `${id}-error` : undefined}
             className={controlClassName}
+            maxLength={1000}
           />
         ) : (
           <input
