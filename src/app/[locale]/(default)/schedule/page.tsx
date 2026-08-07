@@ -1,6 +1,8 @@
-import { getTranslations } from "next-intl/server";
+import { getCalendarEvents } from "@/src/modules/schedule/infrastructure/services/getCalendarEvents";
+import ScheduleContent from "@/src/modules/schedule/presentation/components/ScheduleContent";
 
 export default async function Schedule() {
-  const message = getTranslations();
-  return <div className="pt-4 text-white flex flex-col  w-full ">TESTE schedule</div>;
+  const { events } = await getCalendarEvents();
+
+  return <ScheduleContent events={events ?? []} />;
 }

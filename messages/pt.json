@@ -69,5 +69,18 @@
       "email": "Informe um e-mail válido",
       "maxLength": "Este campo é muito longo"
     }
+  },
+  "schedule": {
+    "empty": "Nenhum evento agendado para este período.",
+    "emptyFiltered": "Nenhum evento agendado para este mês.",
+    "filter": {
+      "enable": "Filtrar por mês",
+      "disable": "Ver todos",
+      "showingAll": "Todos os próximos eventos",
+      "previousMonth": "Mês anterior",
+      "nextMonth": "Próximo mês",
+      "previousYear": "Ano anterior",
+      "nextYear": "Próximo ano"
+    }
   }
 }

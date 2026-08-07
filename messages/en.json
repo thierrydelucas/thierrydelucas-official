@@ -69,5 +69,18 @@
       "email": "Please enter a valid email",
       "maxLength": "This field is too long"
     }
+  },
+  "schedule": {
+    "empty": "No events scheduled for this period.",
+    "emptyFiltered": "No events scheduled for this month.",
+    "filter": {
+      "enable": "Filter by month",
+      "disable": "Show all",
+      "showingAll": "All upcoming events",
+      "previousMonth": "Previous month",
+      "nextMonth": "Next month",
+      "previousYear": "Previous year",
+      "nextYear": "Next year"
+    }
   }
 }
