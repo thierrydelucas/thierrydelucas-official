@@ -1,11 +1,8 @@
+import { getLocale } from "next-intl/server";
 import Hero from "@/src/modules/home/presentation/components/Hero";
 
-type Props = {
-  params: Promise<{ locale: string }>;
-};
-
-export default async function Home({ params }: Props) {
-  const { locale } = await params;
+export default async function Home() {
+  const locale = await getLocale();
 
   return (
     <div className={`py-8 text-center text-white `}>

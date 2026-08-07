@@ -5,7 +5,7 @@ import Toaster from "@/src/shared/presentation/components/Toaster";
 
 import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Inter, Cormorant_Garamond, Playfair } from "next/font/google";
 import { routing } from "@/src/shared/infrastructure/i18n/routing";
@@ -19,7 +19,7 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-cormorant",
-  display: "swap", 
+  display: "swap",
 });
 
 const playfair = Playfair({
@@ -90,13 +90,18 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export default async function LocaleLayout({ children, params }: Props) {
-  const { locale } = await params;
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
-  if (!hasLocale(routing.locales, locale)) {
+export default async function LocaleLayout({ children, params }: Props) {
+  const { locale: localeParam } = await params;
+
+  if (!hasLocale(routing.locales, localeParam)) {
     notFound();
   }
 
+  const locale = await getLocale();
   const messages = await getMessages();
 
   return (
