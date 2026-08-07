@@ -35,8 +35,15 @@ export type GetCalendarEventsResult = {
   error: string | null;
 };
 
+const REVALIDATE_SECONDS = 120;
+
 function resolveEventDate(value?: GoogleCalendarDate): string | undefined {
   return value?.dateTime ?? value?.date;
+}
+
+function getStableTimeMin() {
+  const windowMs = REVALIDATE_SECONDS * 1000;
+  return new Date(Math.floor(Date.now() / windowMs) * windowMs).toISOString();
 }
 
 export async function getCalendarEvents(): Promise<GetCalendarEventsResult> {
@@ -54,14 +61,14 @@ export async function getCalendarEvents(): Promise<GetCalendarEventsResult> {
     `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events`,
   );
   url.searchParams.set("key", apiKey);
-  url.searchParams.set("timeMin", new Date().toISOString());
+  url.searchParams.set("timeMin", getStableTimeMin());
   url.searchParams.set("singleEvents", "true");
   url.searchParams.set("orderBy", "startTime");
   url.searchParams.set("maxResults", "50");
 
   try {
     const response = await fetch(url.toString(), {
-      next: { revalidate: 300 },
+      next: { revalidate: REVALIDATE_SECONDS },
     });
 
     const data = (await response.json()) as GoogleCalendarEventsResponse;
