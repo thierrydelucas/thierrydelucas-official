@@ -6,7 +6,7 @@ import BiographySection, {
 } from "@/src/modules/biography/presentation/components/BiographySection";
 import image01 from "@/public/images/image_26.jpg";
 import image02 from "@/public/images/image_12.jpg";
-import image03 from "@/public/images/image_4.jpg";
+import image03 from "@/public/images/image_4.png";
 import image04 from "@/public/images/image_13.jpg";
 import image05 from "@/public/images/image_3.jpg";
 import image06 from "@/public/images/image_23.jpg";
@@ -18,10 +18,10 @@ const SECTIONS: {
   mobileLayout: BiographyMobileLayout;
   desktopTextAlign?: BiographyDesktopTextAlign;
 }[] = [
-  { id: "01", image: image01, imageLeft: true, mobileLayout: "default" },
+  { id: "01", image: image04, imageLeft: true, mobileLayout: "default" },
   { id: "02", image: image02, imageLeft: false, mobileLayout: "text-first", desktopTextAlign: "end" },
   { id: "03", image: image03, imageLeft: true, mobileLayout: "image-between" },
-  { id: "04", image: image04, imageLeft: false, mobileLayout: "text-first", desktopTextAlign: "end" },
+  { id: "04", image: image01, imageLeft: false, mobileLayout: "text-first", desktopTextAlign: "end" },
   { id: "05", image: image05, imageLeft: true, mobileLayout: "default", desktopTextAlign: "center" },
   { id: "06", image: image06, imageLeft: false, mobileLayout: "text-first", desktopTextAlign: "center" },
 ];

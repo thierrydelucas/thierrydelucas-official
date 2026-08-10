@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/images/image_1.jpeg",
+        url: "/images/image_1.png",
         width: 1073,
         height: 1518,
         alt: "Thierry de Lucas, international concert violinist, holding his violin",
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     title: "Thierry de Lucas | International Concert Violinist",
     description:
       "Internationally acclaimed violinist Thierry de Lucas — classical music, concerts, and performances.",
-    images: ["/images/image_1.jpeg"],
+    images: ["/images/image_1.png"],
   },
   robots: {
     index: true,

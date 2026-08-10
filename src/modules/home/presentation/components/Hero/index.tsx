@@ -2,7 +2,7 @@ import Button from "@/src/shared/presentation/components/Button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import BackgroundImage from "@/public/images/image_5.jpeg";
+import BackgroundImage from "@/public/images/image_5.png";
 import SocialMediaContainer from "@/src/shared/presentation/components/SocialMediaContainer";
 import EmailAddressComponent from "@/src/shared/presentation/components/EmailAddressComponent";
 
@@ -20,8 +20,10 @@ export default function Hero({ locale }: HeroProps) {
           alt="thierry's image"
           width={540}
           height={600}
-          className="rounded-3xl brightness-85"
-          sizes="100vw"
+          className="h-auto w-auto brightness-85"
+          sizes="(min-width: 768px) 540px, 0px"
+          quality={100}
+          unoptimized
         />
       </section>
       <div className="flex flex-col items-center text-center ">

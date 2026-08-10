@@ -67,6 +67,8 @@ export default function BiographySection({
             alt={imageAlt}
             className="h-auto w-full object-cover"
             sizes="(max-width: 768px) 100vw, 42vw"
+            quality={100}
+            unoptimized={image.src.endsWith(".png")}
             placeholder="blur"
           />
         </div>

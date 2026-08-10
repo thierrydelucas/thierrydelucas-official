@@ -35,7 +35,7 @@ export default function DesktopMenu() {
         type="button"
         data-testid="burger-menu-trigger"
         onClick={() => setOpen((prev) => !prev)}
-        className={`text-[16px] transition-all duration-300 cursor-pointer font-cormorant font-semibold mb-[2px] text-white tracking-[2%] hover:opacity-100 ${
+        className={`text-[16px] transition-all duration-300 cursor-pointer font-cormorant font-semibold mb-0.5 text-white tracking-[2%] hover:opacity-100 ${
           open ? "opacity-25" : "opacity-100"
         }`}
       >

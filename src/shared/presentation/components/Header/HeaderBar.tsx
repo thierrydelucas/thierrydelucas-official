@@ -29,8 +29,9 @@ export default function HeaderBar() {
           <Image
             src="/images/logo.png"
             alt="Thierry de Lucas"
-            width={32}
-            height={50}
+            width={48}
+            height={42}
+            className="h-8 w-auto"
           />
           <div>
             <DesktopMenu />

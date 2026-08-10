@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BackgroundImage from "@/public/images/image_5.jpeg";
+import BackgroundImage from "@/public/images/image_5.png";
 import WIDTH_DIMENSION from "@/src/shared/presentation/utils/widthDimension";
 
 export default function HomeLayout({
@@ -16,7 +16,9 @@ export default function HomeLayout({
           fill
           priority
           className="object-cover object-center sm:object-center brightness-85"
-          sizes="100vw"
+          sizes="(max-width: 767px) 100vw, 0px"
+          quality={100}
+          unoptimized
         />
       </section>
 
