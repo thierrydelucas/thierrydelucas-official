@@ -2,6 +2,8 @@ import "../globals.css";
 import Footer from "@/src/shared/presentation/components/Footer";
 import Header from "@/src/shared/presentation/components/Header";
 import Toaster from "@/src/shared/presentation/components/Toaster";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
