@@ -1,3 +1,10 @@
+import { getYoutubePlaylistVideos } from "@/src/modules/discography/infrastructure/services/getYoutubePlaylistVideos";
+import DiscographyContent from "@/src/modules/discography/presentation/components/DiscographyContent";
+
+export const revalidate = 60;
+
 export default async function Discography() {
-  return <div className="pt-4 text-white flex flex-col  w-full ">TESTE disco</div>;
+  const { videos } = await getYoutubePlaylistVideos();
+
+  return <DiscographyContent videos={videos ?? []} />;
 }

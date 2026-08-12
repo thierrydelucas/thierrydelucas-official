@@ -70,6 +70,14 @@
       "maxLength": "This field is too long"
     }
   },
+  "discography": {
+    "empty": "No videos to show yet.",
+    "carousel": {
+      "previous": "Previous videos",
+      "next": "Next videos",
+      "goToPage": "Go to page {page}"
+    }
+  },
   "schedule": {
     "empty": "No events scheduled for this period.",
     "emptyFiltered": "No events scheduled for this month.",

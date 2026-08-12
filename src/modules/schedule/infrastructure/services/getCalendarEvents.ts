@@ -74,7 +74,6 @@ export async function getCalendarEvents(): Promise<GetCalendarEventsResult> {
     const data = (await response.json()) as GoogleCalendarEventsResponse;
 
     if (!response.ok) {
-      console.error("[getCalendarEvents]", data.error?.message ?? response.statusText);
       return {
         events: [],
         error: "Failed to load calendar events",
@@ -114,7 +113,6 @@ export async function getCalendarEvents(): Promise<GetCalendarEventsResult> {
 
     return { events, error: null };
   } catch (error) {
-    console.error("[getCalendarEvents]", error);
     return {
       events: [],
       error: "Failed to load calendar events",

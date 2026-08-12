@@ -14,6 +14,12 @@ const nextConfig: NextConfig = {
     qualities: [75, 100],
     // AVIF preserves shadow detail better than WebP at similar sizes
     formats: ["image/avif", "image/webp"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.ytimg.com",
+      },
+    ],
   },
   async redirects() {
     return [
