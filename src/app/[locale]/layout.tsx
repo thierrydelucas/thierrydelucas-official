@@ -116,7 +116,11 @@ export default async function LocaleLayout({ children, params }: Props) {
           <div className="flex min-h-dvh w-full flex-col bg-[#0B0B0B]">
             <Header />
             <main className={`w-full flex-1`}>
-              <div>{children}</div>
+              <div>
+                {children}
+                <Analytics />
+                <SpeedInsights />
+              </div>
             </main>
             <footer>
               <Footer />
