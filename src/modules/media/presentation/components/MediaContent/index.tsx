@@ -1,5 +1,5 @@
-import { MEDIA_IMAGES } from "@/src/modules/media/presentation/data/mediaImages";
 import MediaGallery from "@/src/modules/media/presentation/components/MediaGallery";
+import { MEDIA_IMAGES } from "@/src/modules/media/presentation/data/mediaImages";
 
 export default function MediaContent() {
   return (

@@ -20,8 +20,8 @@ export const ICON_DATA: IIconData[] = [
   },
   {
     id: 3,
-    icon: "facebook",
-    link: "https://www.facebook.com/thierrydelucas",
+    icon: "spotify",
+    link: "",
     image: "/icons/icon-spotify.svg",
   },
 ];

@@ -3,6 +3,9 @@
     "title": "Welcome",
     "subtitle": "International violinist"
   },
+  "social": {
+    "comingSoon": "Coming soon"
+  },
   "nav": {
     "home": "Home",
     "biography": "Biography",
