@@ -4,17 +4,12 @@ const SOCIAL_PROFILES = [
   {
     id: 1,
     href: "https://www.facebook.com/thierry.delucasneves",
-    label: "facebook",
+    label: "Thierry de Lucas on Facebook",
   },
   {
     id: 2,
     href: "https://www.instagram.com/thierrydelucas",
-    label: "instagram",
-  },
-  {
-    id: 3,
-    href: "https://www.facebook.com/thierrydelucas",
-    label: "facebook",
+    label: "Thierry de Lucas on Instagram",
   },
 ] as const;
 
@@ -36,14 +31,13 @@ describe("Footer", () => {
   });
 
   it("renders social profile links that open externally in a new tab", () => {
-    cy.get("[data-cy=footer-social-links]")
-      .children()
-      .should("have.length", SOCIAL_PROFILES.length);
+    cy.get("[data-cy=footer-social-links]").children().should("have.length", 3);
 
     SOCIAL_PROFILES.forEach(({ id, href }) => {
       cy.get(`[data-cy=footer-social-link-${id}]`)
         .should("have.attr", "href", href)
-        .and("have.attr", "target", "_blank");
+        .and("have.attr", "target", "_blank")
+        .and("have.attr", "rel", "noopener noreferrer");
     });
   });
 
@@ -54,5 +48,9 @@ describe("Footer", () => {
         .find("img")
         .should("have.attr", "alt", label);
     });
+
+    cy.get("[data-cy=footer-social-link-3]")
+      .find("img")
+      .should("have.attr", "alt", "Thierry de Lucas on Spotify");
   });
 });

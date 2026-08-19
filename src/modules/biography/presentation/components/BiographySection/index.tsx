@@ -43,9 +43,9 @@ export default function BiographySection({
         >
           {number}
         </span>
-        <h4 className="font-cormorant -mt-18 text-[34px] md:text-[64px] font-light uppercase text-zinc-100 md:[-webkit-text-stroke:0.6px_#0B0B0B] md:-mt-28 tracking-tight">
+        <h2 className="font-cormorant -mt-18 text-[34px] md:text-[64px] font-light uppercase text-zinc-100 md:[-webkit-text-stroke:0.6px_#0B0B0B] md:-mt-28 tracking-tight">
           {title}
-        </h4>
+        </h2>
       </div>
 
       <div

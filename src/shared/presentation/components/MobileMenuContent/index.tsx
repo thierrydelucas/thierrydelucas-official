@@ -10,9 +10,9 @@ export default function MobileMenuContent({ onButtonClick }: Props) {
       data-cy="mobile-menu-content-container"
       className="flex flex-col gap-4 items-center"
     >
-      <div data-cy="mobile-menu-nav-container">
+      <nav data-cy="mobile-menu-nav-container">
         <MenuNav onButtonClick={onButtonClick} />
-      </div>
+      </nav>
       <div data-cy="mobile-menu-switcher-container">
         <Switcher onButtonClick={onButtonClick} />
       </div>

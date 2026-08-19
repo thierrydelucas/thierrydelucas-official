@@ -17,12 +17,13 @@ export default function Hero({ locale }: HeroProps) {
       <section className="hidden md:block mr-10">
         <Image
           src={BackgroundImage}
-          alt="thierry's image"
+          alt="Thierry de Lucas, concert violinist"
           width={540}
           height={600}
           className="h-auto w-auto brightness-85"
           sizes="(min-width: 768px) 540px, 0px"
           quality={100}
+          priority
           unoptimized
         />
       </section>

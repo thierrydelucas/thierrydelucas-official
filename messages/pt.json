@@ -1,4 +1,30 @@
 {
+  "seo": {
+    "home": {
+      "title": "Thierry de Lucas | Violinista Concertista",
+      "description": "Site oficial de Thierry de Lucas, violinista concertista brasileiro, membro dos Sphinx Virtuosi e spalla associado da Savannah Philharmonic."
+    },
+    "biography": {
+      "title": "Biografia",
+      "description": "Biografia de Thierry de Lucas: Manhattan School of Music, Pinchas Zukerman, Sphinx Virtuosi, Savannah Philharmonic e Projeto De Lucas."
+    },
+    "schedule": {
+      "title": "Agenda de Concertos",
+      "description": "Próximos concertos e apresentações do violinista Thierry de Lucas nos Estados Unidos, no Brasil e na Europa."
+    },
+    "discography": {
+      "title": "Discografia",
+      "description": "Gravações e performances de Thierry de Lucas, incluindo Sphinx Virtuosi na Deutsche Grammophon e Romances Brasileiros."
+    },
+    "media": {
+      "title": "Mídia",
+      "description": "Fotos do violinista concertista Thierry de Lucas em palco e em retrato."
+    },
+    "contact": {
+      "title": "Contato",
+      "description": "Entre em contato com Thierry de Lucas para concertos, masterclasses e colaborações."
+    }
+  },
   "home": {
     "title": "Bem vindo",
     "subtitle": "Violinista internacional"
@@ -93,5 +119,10 @@
       "previousYear": "Ano anterior",
       "nextYear": "Próximo ano"
     }
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "description": "A página que você procura não existe ou foi movida.",
+    "backHome": "Voltar para a home"
   }
 }

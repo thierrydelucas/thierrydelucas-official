@@ -1,13 +1,10 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import createMiddleware from "next-intl/middleware";
+import { routing } from "@/src/shared/infrastructure/i18n/routing";
 
-const supportedLocales = ["en", "pt"];
-
-const intlMiddleware = createMiddleware({
-  locales: supportedLocales,
-  defaultLocale: "en",
-});
+const intlMiddleware = createMiddleware(routing);
+const supportedLocales: readonly string[] = routing.locales;
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -15,12 +12,20 @@ export function proxy(request: NextRequest) {
   const segments = pathname.split("/");
   const maybeLocale = segments[1];
 
-  if (pathname === "/" || segments.length < 3) {
-    return NextResponse.redirect(new URL("/en/home", request.url));
+  if (pathname === "/") {
+    return NextResponse.redirect(new URL("/en/home", request.url), 308);
+  }
+
+  if (segments.length < 3) {
+    const localeHome = supportedLocales.includes(maybeLocale)
+      ? `/${maybeLocale}/home`
+      : "/en/home";
+
+    return NextResponse.redirect(new URL(localeHome, request.url), 308);
   }
 
   if (maybeLocale && !supportedLocales.includes(maybeLocale)) {
-    return NextResponse.redirect(new URL(`/en/home`, request.url));
+    return NextResponse.redirect(new URL("/en/home", request.url), 308);
   }
 
   return intlMiddleware(request);

@@ -4,6 +4,7 @@ import BiographySection, {
   type BiographyDesktopTextAlign,
   type BiographyMobileLayout,
 } from "@/src/modules/biography/presentation/components/BiographySection";
+import VisuallyHiddenHeading from "@/src/shared/presentation/components/VisuallyHiddenHeading";
 import image01 from "@/public/images/image_26.jpg";
 import image02 from "@/public/images/image_12.jpg";
 import image03 from "@/public/images/image_4.png";
@@ -27,18 +28,22 @@ const SECTIONS: {
 ];
 
 export default async function BiographyContent() {
-  const t = await getTranslations("biography.sections");
+  const t = await getTranslations();
 
   return (
     <div className="flex w-full flex-col gap-16 py-10 text-white md:gap-24 md:py-14">
+      <VisuallyHiddenHeading>{t("nav.biography")}</VisuallyHiddenHeading>
       {SECTIONS.map((section) => (
         <BiographySection
           key={section.id}
           number={section.id}
-          title={t(`${section.id}.title`)}
-          paragraphs={[t(`${section.id}.p1`), t(`${section.id}.p2`)]}
+          title={t(`biography.sections.${section.id}.title`)}
+          paragraphs={[
+            t(`biography.sections.${section.id}.p1`),
+            t(`biography.sections.${section.id}.p2`),
+          ]}
           image={section.image}
-          imageAlt={`Thierry de Lucas — ${section.id}`}
+          imageAlt={`Thierry de Lucas — ${t(`biography.sections.${section.id}.title`)}`}
           imageLeft={section.imageLeft}
           mobileLayout={section.mobileLayout}
           desktopTextAlign={section.desktopTextAlign}

@@ -8,7 +8,7 @@ export default async function SocialMediaContainer() {
 
   return (
     <div data-cy="footer-social-links" className="flex items-center gap-6">
-      {ICON_DATA.map(({ id, icon, link, image }) =>
+      {ICON_DATA.map(({ id, icon, label, link, image }) =>
         icon === "spotify" ? (
           <button
             key={id}
@@ -19,7 +19,7 @@ export default async function SocialMediaContainer() {
           >
             <Image
               src={image}
-              alt={icon}
+              alt={label}
               width={24}
               height={24}
               className="transition-all duration-350 ease-in-out hover:opacity-50"
@@ -31,12 +31,13 @@ export default async function SocialMediaContainer() {
             data-cy={`footer-social-link-${id}`}
             href={link}
             target="_blank"
+            rel="noopener noreferrer"
             className="cursor-pointer"
-            title={icon}
+            title={label}
           >
             <Image
               src={image}
-              alt={icon}
+              alt={label}
               width={24}
               height={24}
               className="hover:scale-125 transition-all duration-350 ease-in-out"

@@ -12,7 +12,7 @@ export default function HomeLayout({
       <section className="relative w-dvw h-[68dvh] sm:h-[88dvh] md:hidden">
         <Image
           src={BackgroundImage}
-          alt="thierry's image"
+          alt="Thierry de Lucas, concert violinist"
           fill
           priority
           className="object-cover object-center sm:object-center brightness-85"

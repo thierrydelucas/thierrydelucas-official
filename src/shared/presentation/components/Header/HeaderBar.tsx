@@ -5,14 +5,17 @@ import DesktopMenu from "../DesktopMenu";
 import WIDTH_DIMENSION from "../../utils/widthDimension";
 import { cn } from "../../utils/cn";
 import Image from "next/image";
+import Link from "next/link";
+import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 
 export default function HeaderBar() {
   const pathname = usePathname();
+  const locale = useLocale();
   const isHomePage = /\/home\/?$/.test(pathname);
 
   return (
-    <section
+    <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 flex px-4 py-5 md:px-8",
         isHomePage ? "bg-transparent md:bg-[#0B0B0B]" : "bg-[#0B0B0B]",
@@ -26,13 +29,15 @@ export default function HeaderBar() {
         <div
           className={`w-full ${WIDTH_DIMENSION} flex items-center justify-between`}
         >
-          <Image
-            src="/images/logo.png"
-            alt="Thierry de Lucas"
-            width={48}
-            height={42}
-            className="h-8 w-auto"
-          />
+          <Link href={`/${locale}/home`} aria-label="Thierry de Lucas">
+            <Image
+              src="/images/logo.png"
+              alt="Thierry de Lucas"
+              width={48}
+              height={42}
+              className="h-8 w-auto"
+            />
+          </Link>
           <div>
             <DesktopMenu />
           </div>
@@ -46,6 +51,6 @@ export default function HeaderBar() {
           WebkitMaskImage: "linear-gradient(to bottom, black, transparent)",
         }}
       />
-    </section>
+    </header>
   );
 }
