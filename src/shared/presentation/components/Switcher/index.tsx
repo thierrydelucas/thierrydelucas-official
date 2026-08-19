@@ -1,12 +1,7 @@
 "use client";
 
-import { DRAWER_ANIMATION_DURATION_MS } from "@/src/shared/presentation/components/Drawer";
 import { useLocale } from "next-intl";
-import {
-  Link,
-  usePathname,
-  useRouter,
-} from "@/src/shared/infrastructure/i18n/navigation";
+import { Link, usePathname } from "@/src/shared/infrastructure/i18n/navigation";
 import { cn } from "../../utils/cn";
 
 const LOCALES = [
@@ -21,7 +16,6 @@ type Props = {
 export default function Switcher({ onButtonClick }: Props) {
   const locale = useLocale();
   const pathname = usePathname();
-  const router = useRouter();
 
   return (
     <div
@@ -40,13 +34,12 @@ export default function Switcher({ onButtonClick }: Props) {
             locale={code}
             data-cy={`locale-switcher-${code}`}
             onClick={(event) => {
-              if (locale === code) return;
+              if (locale === code) {
+                event.preventDefault();
+                return;
+              }
 
-              event.preventDefault();
               onButtonClick?.();
-              window.setTimeout(() => {
-                router.replace(pathname, { locale: code });
-              }, DRAWER_ANIMATION_DURATION_MS);
             }}
             className={cn(
               locale !== code && "opacity-50",

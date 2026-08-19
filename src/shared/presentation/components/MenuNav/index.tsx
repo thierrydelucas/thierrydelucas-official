@@ -1,8 +1,7 @@
 "use client";
 import Link from "next/link";
-import { DRAWER_ANIMATION_DURATION_MS } from "@/src/shared/presentation/components/Drawer";
 import { useLocale, useTranslations } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useMemo } from "react";
 
 type Props = {
@@ -12,7 +11,6 @@ type Props = {
 export default function MenuNav({ onButtonClick }: Props) {
   const locale = useLocale();
   const pathname = usePathname();
-  const router = useRouter();
   const splittedPath = pathname.split("/");
   const path = splittedPath[splittedPath.length - 1];
   const message = useTranslations();
@@ -64,13 +62,8 @@ export default function MenuNav({ onButtonClick }: Props) {
         <Link
           href={href}
           key={id}
-          onClick={(event) => {
-            event.preventDefault();
-            onButtonClick?.();
-            window.setTimeout(() => {
-              router.push(href);
-            }, DRAWER_ANIMATION_DURATION_MS);
-          }}
+          onClick={onButtonClick}
+          data-cy={`menu-nav-link-${originalName}`}
           className={`text-white font-playfair text-xl md:text-[18px] lg:text-xl text-center ${path.toUpperCase() !== originalName.toUpperCase() && "opacity-50"} md:hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer`}
         >
           {name}

@@ -9,6 +9,10 @@ const supportedLocales: readonly string[] = routing.locales;
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  if (pathname.startsWith("/.well-known")) {
+    return new NextResponse(null, { status: 404 });
+  }
+
   const segments = pathname.split("/");
   const maybeLocale = segments[1];
 
@@ -32,5 +36,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next|.*\\..*).*)"],
+  matcher: ["/((?!api|_next|.*\\..*).*)", "/.well-known/:path*"],
 };

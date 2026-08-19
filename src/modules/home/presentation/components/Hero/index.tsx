@@ -1,10 +1,9 @@
 import Button from "@/src/shared/presentation/components/Button";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import BackgroundImage from "@/public/images/image_5.png";
 import SocialMediaContainer from "@/src/shared/presentation/components/SocialMediaContainer";
-import EmailAddressComponent from "@/src/shared/presentation/components/EmailAddressComponent";
+import { useTranslations } from "next-intl";
 
 interface HeroProps {
   locale: string;
@@ -18,13 +17,10 @@ export default function Hero({ locale }: HeroProps) {
         <Image
           src={BackgroundImage}
           alt="Thierry de Lucas, concert violinist"
-          width={540}
-          height={600}
-          className="h-auto w-auto brightness-85"
-          sizes="(min-width: 768px) 540px, 0px"
+          className="h-auto w-155 brightness-85"
+          sizes="(min-width: 768px) 620px, 0px"
           quality={100}
-          priority
-          unoptimized
+          loading="eager"
         />
       </section>
       <div className="flex flex-col items-center text-center ">
@@ -43,7 +39,6 @@ export default function Hero({ locale }: HeroProps) {
 
         <section className="hidden md:flex flex-col gap-6 mt-14 items-center">
           <SocialMediaContainer />
-          <EmailAddressComponent />
         </section>
       </div>
     </section>

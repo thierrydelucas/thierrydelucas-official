@@ -1,8 +1,8 @@
-import { getLocale, getTranslations } from "next-intl/server";
 import Hero from "@/src/modules/home/presentation/components/Hero";
+import JsonLd from "@/src/shared/presentation/components/JsonLd";
+import { getLocale, getTranslations } from "next-intl/server";
 import { getPageMetadata } from "@/src/shared/infrastructure/seo/buildPageMetadata";
 import { webPageJsonLd } from "@/src/shared/infrastructure/seo/jsonLd";
-import JsonLd from "@/src/shared/presentation/components/JsonLd";
 
 type Props = {
   params: Promise<{ locale: string }>;

@@ -1,11 +1,4 @@
-function SkeletonBone({ className }: { className?: string }) {
-  return (
-    <div
-      className={`animate-pulse rounded-sm bg-white/10 ${className ?? ""}`}
-      aria-hidden
-    />
-  );
-}
+import SkeletonBone from "@/src/shared/presentation/components/SkeletonBone";
 
 export default function Loading() {
   return (

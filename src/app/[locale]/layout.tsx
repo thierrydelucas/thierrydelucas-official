@@ -43,6 +43,11 @@ export async function generateMetadata({
   params,
 }: Props): Promise<Metadata> {
   const { locale } = await params;
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   const t = await getTranslations({ locale, namespace: "seo.home" });
   const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
 
@@ -83,6 +88,8 @@ export async function generateMetadata({
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
+export const dynamicParams = false;
 
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale: localeParam } = await params;

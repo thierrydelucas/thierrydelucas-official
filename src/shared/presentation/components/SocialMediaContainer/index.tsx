@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getTranslations } from "next-intl/server";
+import { Mail } from "lucide-react";
+import { getLocale, getTranslations } from "next-intl/server";
 import { ICON_DATA } from "../../utils/socialMediaList";
 
 export default async function SocialMediaContainer() {
   const t = await getTranslations("social");
+  const locale = await getLocale();
+  const contactLabel = t("contact");
 
   return (
-    <div data-cy="footer-social-links" className="flex items-center gap-6">
+    <div data-cy="footer-social-links" className="flex items-center gap-5">
       {ICON_DATA.map(({ id, icon, label, link, image }) =>
         icon === "spotify" ? (
           <button
@@ -45,6 +48,19 @@ export default async function SocialMediaContainer() {
           </Link>
         ),
       )}
+      <Link
+        href={`/${locale}/contact`}
+        data-cy="footer-social-link-contact"
+        className="cursor-pointer"
+        title={contactLabel}
+        aria-label={contactLabel}
+      >
+        <Mail
+          size={26}
+          strokeWidth={1.5}
+          className="text-white/80 hover:scale-125 transition-all duration-350 ease-in-out"
+        />
+      </Link>
     </div>
   );
 }

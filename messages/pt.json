@@ -30,7 +30,12 @@
     "subtitle": "Violinista internacional"
   },
   "social": {
-    "comingSoon": "Em breve"
+    "comingSoon": "Em breve",
+    "contact": "Contatar Thierry de Lucas"
+  },
+  "footer": {
+    "copyright": "© 2026 Thierry de Lucas. Todos os direitos reservados.",
+    "credit": "Site desenvolvido por <developer>Gustavo Leite</developer>"
   },
   "nav": {
     "home": "Home",

@@ -30,7 +30,12 @@
     "subtitle": "International violinist"
   },
   "social": {
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "contact": "Contact Thierry de Lucas"
+  },
+  "footer": {
+    "copyright": "© 2026 Thierry de Lucas. All rights reserved.",
+    "credit": "Site developed by <developer>Gustavo Leite</developer>"
   },
   "nav": {
     "home": "Home",
