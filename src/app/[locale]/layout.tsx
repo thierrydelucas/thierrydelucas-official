@@ -58,6 +58,13 @@ export async function generateMetadata({
       template: `%s | ${SITE_NAME}`,
     },
     description: t("description"),
+    icons: {
+      icon: [
+        { url: "/favicon.ico", type: "image/x-icon" },
+        { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      ],
+      apple: { url: "/apple-touch-icon.png", sizes: "180x180" },
+    },
     authors: [{ name: SITE_NAME }],
     creator: SITE_NAME,
     publisher: SITE_NAME,

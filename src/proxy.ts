@@ -6,8 +6,18 @@ import { routing } from "@/src/shared/infrastructure/i18n/routing";
 const intlMiddleware = createMiddleware(routing);
 const supportedLocales: readonly string[] = routing.locales;
 
+const ICON_PATHS = new Set([
+  "/favicon.ico",
+  "/icon-192.png",
+  "/apple-touch-icon.png",
+]);
+
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  if (ICON_PATHS.has(pathname)) {
+    return NextResponse.next();
+  }
 
   if (pathname.startsWith("/.well-known")) {
     return new NextResponse(null, { status: 404 });
